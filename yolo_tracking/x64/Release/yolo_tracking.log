@@ -1,0 +1,214 @@
+﻿  yolo_console.cpp
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(75,19): warning C4305:  'initializing': truncation from 'double' to 'float'
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(103,1): warning C4244:  '*=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(151,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(634,1): warning C4267:  'argument': conversion from 'size_t' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(634,1): warning C4267:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(634,1): warning C4267:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(634,1): warning C4267:             _Tp=int
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(634,1): warning C4267:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(657,1): warning C4267:  'argument': conversion from 'size_t' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(657,1): warning C4267:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(657,1): warning C4267:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(657,1): warning C4267:             _Tp=int
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(657,1): warning C4267:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(659,1): warning C4267:  'argument': conversion from 'size_t' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(659,1): warning C4267:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(659,1): warning C4267:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(659,1): warning C4267:             _Tp=int
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(659,1): warning C4267:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(675,1): warning C4267:  'argument': conversion from 'size_t' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(675,1): warning C4267:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(675,1): warning C4267:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(675,1): warning C4267:             _Tp=int
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(675,1): warning C4267:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(745,37): warning C4244:  '=': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(745,37): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(745,37): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(745,37): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(745,37): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(746,37): warning C4244:  '=': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(746,37): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(746,37): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(746,37): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(746,37): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(749,37): warning C4244:  '=': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(749,37): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(749,37): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(749,37): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(749,37): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(750,37): warning C4244:  '=': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(750,37): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(750,37): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(750,37): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(750,37): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(759,36): warning C4244:  '=': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(759,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(759,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(759,36): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(759,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(760,36): warning C4244:  '=': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(760,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(760,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(760,36): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(760,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(761,36): warning C4244:  '=': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(761,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(761,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(761,36): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(761,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(762,36): warning C4244:  '=': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(762,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(762,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(762,36): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(762,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(780,36): warning C4244:  '=': conversion from '_Tp' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(780,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(780,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(780,36): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(780,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(781,36): warning C4244:  '=': conversion from '_Tp' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(781,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(781,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(781,36): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(781,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(782,36): warning C4244:  '=': conversion from '_Tp' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(782,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(782,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(782,36): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(782,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(783,36): warning C4244:  '=': conversion from '_Tp' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(783,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(783,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(783,36): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(783,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(820,1): warning C4305:  '=': truncation from 'double' to '_Tp'
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(820,1): warning C4305:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(820,1): warning C4305:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(820,1): warning C4305:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(820,1): warning C4305:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(821,1): warning C4305:  '=': truncation from 'double' to '_Tp'
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(821,1): warning C4305:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(821,1): warning C4305:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(821,1): warning C4305:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(821,1): warning C4305:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(822,1): warning C4305:  '=': truncation from 'double' to '_Tp'
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(822,1): warning C4305:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(822,1): warning C4305:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(822,1): warning C4305:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(822,1): warning C4305:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(823,1): warning C4305:  '=': truncation from 'double' to '_Tp'
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(823,1): warning C4305:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(823,1): warning C4305:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(823,1): warning C4305:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(823,1): warning C4305:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(824,1): warning C4305:  '=': truncation from 'double' to '_Tp'
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(824,1): warning C4305:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(824,1): warning C4305:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(824,1): warning C4305:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(824,1): warning C4305:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(825,1): warning C4305:  '=': truncation from 'double' to '_Tp'
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(825,1): warning C4305:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(825,1): warning C4305:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(825,1): warning C4305:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(825,1): warning C4305:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(862,102): warning C4244:  '=': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(862,102): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(862,102): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(862,102): warning C4244:             _Rep=double
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(862,102): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(874,28): warning C4244:  'initializing': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(874,28): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(874,28): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(874,28): warning C4244:             _Rep=double
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(874,28): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(878,50): warning C4018:  '>': signed/unsigned mismatch
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(879,50): warning C4018:  '>': signed/unsigned mismatch
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(905,87): warning C4244:  'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(905,75): warning C4244:  'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(905,63): warning C4244:  'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(905,51): warning C4244:  'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(911,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\darknet\yolo_class.hpp(936,31): warning C4244:  '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(190,46): warning C4018:  '>': signed/unsigned mismatch
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(199,62): warning C4018:  '>': signed/unsigned mismatch
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:  'argument': conversion from 'const _Ty' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:             _Ty=int
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:         and
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,83): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:  'argument': conversion from 'const _Ty' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:             _Ty=int
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:         and
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(203,56): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:  'argument': conversion from 'const _Ty' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:             _Ty=int
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:         and
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,87): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:  'argument': conversion from 'const _Ty' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:             _Ty=int
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:         and
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(204,37): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,61): warning C4244:  'argument': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,61): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,61): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,61): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,61): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,53): warning C4244:  'argument': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,53): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,53): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,53): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(206,53): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,84): warning C4244:  'argument': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,84): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,84): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,84): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,84): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,77): warning C4244:  'argument': conversion from 'unsigned int' to '_Tp', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,77): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,77): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,77): warning C4244:             _Tp=float
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(207,77): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(285,32): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(285,24): warning C4244:  'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(367,36): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(585,105): warning C4244:  'argument': conversion from 'uint64_t' to 'int', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(598,36): warning C4244:  'initializing': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(598,36): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(598,36): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(598,36): warning C4244:             _Rep=double
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(598,36): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(600,66): warning C4244:  'argument': conversion from 'float' to 'const _Ty', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(600,66): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(600,66): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(600,66): warning C4244:             _Ty=int
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(600,66): warning C4244:         ]
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(601,66): warning C4244:  'argument': conversion from 'float' to 'const _Ty', possible loss of data
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(601,66): warning C4244:         with
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(601,66): warning C4244:         [
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(601,66): warning C4244:             _Ty=int
+C:\Users\admin\source\repos\yolo_tracking\yolo_tracking\yolo_console.cpp(601,66): warning C4244:         ]
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1297 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  yolo_tracking.vcxproj -> C:\Users\admin\source\repos\yolo_tracking\x64\yolo_tracking.exe
