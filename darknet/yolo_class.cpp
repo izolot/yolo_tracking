@@ -320,7 +320,7 @@ LIB_API std::vector<bbox_t> Detector::detect(image_t img, float thresh, bool use
         int const obj_id = max_index(dets[i].prob, l.classes);
         float const prob = dets[i].prob[obj_id];
 
-        if (prob > thresh)
+        if (prob > thresh && obj_id == 0) // only person class
         {
             bbox_t bbox;
             bbox.x = std::max((double)0, (b.x - b.w / 2.)*im.w);

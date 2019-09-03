@@ -12,11 +12,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="darknet\yolo_class.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <Library Include="..\x64\yolo_cuda.lib" />
   </ItemGroup>
 </Project>

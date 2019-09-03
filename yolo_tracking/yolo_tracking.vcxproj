@@ -22,9 +22,6 @@
     <ClCompile Include="yolo_console.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="darknet\yolo_class.hpp" />
-  </ItemGroup>
-  <ItemGroup>
     <Library Include="..\x64\yolo_cuda.lib" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
