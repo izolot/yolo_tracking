@@ -1,4 +1,4 @@
-# yolo_tracking(test)
+# yolo_tracking(test) based by https://github.com/AlexeyAB/darknet/blob/master/src/yolo_console_dll.cpp
 This code has been tested CUDA 10.1, OpenCV 4.1, VS 2019, Win10x64.
 - Install CUDA https://developer.nvidia.com/cuda-downloads
 - Install OpenCV https://opencv.org/releases/
