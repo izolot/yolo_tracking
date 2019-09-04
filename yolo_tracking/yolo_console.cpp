@@ -27,13 +27,6 @@
 #define OPENCV_VERSION CVAUX_STR(CV_VERSION_MAJOR)"" CVAUX_STR(CV_VERSION_MINOR)"" CVAUX_STR(CV_VERSION_REVISION)
 #ifndef USE_CMAKE_LIBS
 #pragma comment(lib, "opencv_world" OPENCV_VERSION ".lib")
-#ifdef TRACK_OPTFLOW
-#pragma comment(lib, "opencv_cudaoptflow" OPENCV_VERSION ".lib")
-#pragma comment(lib, "opencv_cudaimgproc" OPENCV_VERSION ".lib")
-#pragma comment(lib, "opencv_core" OPENCV_VERSION ".lib")
-#pragma comment(lib, "opencv_imgproc" OPENCV_VERSION ".lib")
-#pragma comment(lib, "opencv_highgui" OPENCV_VERSION ".lib")
-#endif    // TRACK_OPTFLOW
 #endif    // USE_CMAKE_LIBS
 #else     // OpenCV 2.x
 #define OPENCV_VERSION CVAUX_STR(CV_VERSION_EPOCH)"" CVAUX_STR(CV_VERSION_MAJOR)"" CVAUX_STR(CV_VERSION_MINOR)
@@ -56,7 +49,7 @@ void draw_boxes(cv::Mat mat_img, std::vector<bbox_t> result_vec, std::vector<std
         cv::rectangle(mat_img, cv::Rect(i.x, i.y, i.w, i.h), color, 2);
         if (obj_names.size() > i.obj_id) {
             std::string obj_name = obj_names[i.obj_id];
-            if (i.track_id > 0) obj_name += " - " + std::to_string(i.track_id);
+            if (i.track_id > 0) obj_name += std::to_string(i.prob) + "%  id" + std::to_string(i.track_id);
             cv::Size const text_size = getTextSize(obj_name, cv::FONT_HERSHEY_COMPLEX_SMALL, 1.2, 2, 0);
             int max_width = (text_size.width > i.w + 2) ? text_size.width : (i.w + 2);
             max_width = std::max(max_width, (int)i.w + 2);
@@ -89,7 +82,7 @@ void show_console_result(std::vector<bbox_t> const result_vec, std::vector<std::
     if (frame_id >= 0) std::cout << " Frame: " << frame_id << std::endl;
     for (auto &i : result_vec) {
         if (obj_names.size() > i.obj_id) std::cout << obj_names[i.obj_id] << " - ";
-        std::cout << "obj_id = " << i.obj_id << ",  x = " << i.x << ", y = " << i.y
+        std::cout << "obj_id = " << i.obj_id << ", track_id " << i.track_id << " x = " << i.x << ", y = " << i.y
             << ", w = " << i.w << ", h = " << i.h
             << std::setprecision(3) << ", prob = " << i.prob << std::endl;
     }
@@ -157,17 +150,12 @@ int main(int argc, char *argv[])
     Detector detector(cfg_file, weights_file);
 
     auto obj_names = objects_names_from_file(names_file);
-    std::string out_videofile = "result.avi";
+    std::string out_videofile = "result.mp4";
     bool const save_output_videofile = true;   // true - for save to videofile
     bool const send_network = false;        // true - for remote detection
     bool const use_kalman_filter = false;   // true - for stationary camera
 
     bool detection_sync = true;             // true - for video-file
-#ifdef TRACK_OPTFLOW    // for slow GPU
-    detection_sync = false;
-    Tracker_optflow tracker_flow;
-    //detector.wait_stream = true;
-#endif  // TRACK_OPTFLOW
 
 
     while (true)
@@ -202,6 +190,7 @@ int main(int argc, char *argv[])
                 Track_kalman_t track_kalman;
 
 
+
                 cv::VideoCapture cap;
                 if (filename == "web_camera") {
                     cap.open(0);
@@ -210,22 +199,16 @@ int main(int argc, char *argv[])
                     cap.open(filename);
                     cap >> cur_frame;
                 }
-#ifdef CV_VERSION_EPOCH // OpenCV 2.x
-                video_fps = cap.get(CV_CAP_PROP_FPS);
-#else
                 video_fps = cap.get(cv::CAP_PROP_FPS);
-#endif
+
                 cv::Size const frame_size = cur_frame.size();
                 //cv::Size const frame_size(cap.get(CV_CAP_PROP_FRAME_WIDTH), cap.get(CV_CAP_PROP_FRAME_HEIGHT));
                 std::cout << "\n Video size: " << frame_size << std::endl;
 
                 cv::VideoWriter output_video;
                 if (save_output_videofile)
-#ifdef CV_VERSION_EPOCH // OpenCV 2.x
-                    output_video.open(out_videofile, CV_FOURCC('D', 'I', 'V', 'X'), std::max(35, video_fps), frame_size, true);
-#else
-                    output_video.open(out_videofile, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'), std::max(35, video_fps), frame_size, true);
-#endif
+                    output_video.open(out_videofile, cv::VideoWriter::fourcc('D', 'I', 'V', 'X'), std::max(35, video_fps), frame_size, true);
+
 
                 struct detection_data_t {
                     cv::Mat cap_frame;
@@ -307,6 +290,7 @@ int main(int argc, char *argv[])
                             result_vec = detector.detect_resized(*det_image, frame_size.width, frame_size.height, thresh, true);  // true
                         fps_det_counter++;
                         //std::this_thread::sleep_for(std::chrono::milliseconds(150));
+						
 
                         detection_data.new_detection = true;
                         detection_data.result_vec = result_vec;
@@ -347,22 +331,6 @@ int main(int argc, char *argv[])
                         cv::Mat draw_frame = detection_data.cap_frame.clone();
                         std::vector<bbox_t> result_vec = detection_data.result_vec;
 
-#ifdef TRACK_OPTFLOW
-                        if (detection_data.new_detection) {
-                            tracker_flow.update_tracking_flow(detection_data.cap_frame, detection_data.result_vec);
-                            while (track_optflow_queue.size() > 0) {
-                                draw_frame = track_optflow_queue.back();
-                                result_vec = tracker_flow.tracking_flow(track_optflow_queue.front(), false);
-                                track_optflow_queue.pop();
-                            }
-                        }
-                        else {
-                            track_optflow_queue.push(cap_frame);
-                            result_vec = tracker_flow.tracking_flow(cap_frame, false);
-                        }
-                        detection_data.new_detection = true;    // to correct kalman filter
-#endif //TRACK_OPTFLOW
-
                         // track ID by using kalman filter
                         if (use_kalman_filter) {
                             if (detection_data.new_detection) {
@@ -376,7 +344,7 @@ int main(int argc, char *argv[])
                         else {
                             int frame_story = std::max(5, current_fps_cap.load());
 							result_vec = detector.tracking_id(result_vec, true, frame_story, 45);
-
+							show_console_result(result_vec, obj_names);
                         }
 
                         //small_preview.set(draw_frame, result_vec);
