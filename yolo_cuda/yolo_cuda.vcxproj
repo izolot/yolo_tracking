@@ -69,7 +69,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>GPU;LIB_EXPORTS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;_LIB;WIN32;WIN64;NDEBUG;_CONSOLE;_LIB%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(OPENCV_DIR)\include;$(CUDA_PATH)\include;C:\opencv_4.1\opencv\build\include;$(SolutionDir)3rdparty\stb\include;$(SolutionDir)3rdparty\pthreads\include;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir);$(CUDNN)\include;$(cudnn)\include;$(SolutionDir)darknet</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\include;$(CUDA_PATH)\include;$(SolutionDir)3rdparty\stb\include;$(SolutionDir)3rdparty\pthreads\include;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir);$(CUDNN)\include;$(cudnn)\include;$(SolutionDir)darknet</AdditionalIncludeDirectories>
       <UndefinePreprocessorDefinitions>OPENCV;</UndefinePreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -81,7 +81,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>pthreadVC2.lib;cublas.lib;curand.lib;cudart.lib;cuda.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OPENCV_DIR)\x64\vc15\lib;$(OPENCV_DIR)\x64\vc14\lib;C:\opencv_4.1\opencv\build\x64\vc14\lib;$(CUDA_PATH)\lib\$(PlatformName);$(CUDNN)\lib\x64;$(cudnn)\lib\x64;$(SolutionDir)3rdparty\pthreads\lib;$(SolutionDir)darknet;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\x64\vc15\lib;$(OPENCV_DIR)\x64\vc14\lib;$(CUDA_PATH)\lib\$(PlatformName);$(CUDNN)\lib\x64;$(cudnn)\lib\x64;$(SolutionDir)3rdparty\pthreads\lib;$(SolutionDir)darknet;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>

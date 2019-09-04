@@ -91,9 +91,6 @@ public:
 
     LIB_API void *get_cuda_context();
 
-    //LIB_API bool send_json_http(std::vector<bbox_t> cur_bbox_vec, std::vector<std::string> obj_names, int frame_id,
-    //    std::string filename = std::string(), int timeout = 400000, int port = 8070);
-
     std::vector<bbox_t> detect_resized(image_t img, int init_w, int init_h, float thresh = 0.2, bool use_mean = false)
     {
         if (img.data == NULL)
@@ -172,7 +169,7 @@ private:
     static image_t make_image_custom(int w, int h, int c)
     {
         image_t out = make_empty_image(w, h, c);
-        out.data = (float *)calloc(h*w*c, sizeof(float));
+        out.data = (float *)calloc(h * w * c, sizeof(float));
         return out;
     }
 
@@ -694,7 +691,7 @@ public:
 };
 
 
-class track_kalman_t
+class Track_kalman_t
 {
     int track_id_counter;
     std::chrono::steady_clock::time_point global_last_time;
@@ -849,7 +846,7 @@ public:
 
 
 
-    track_kalman_t(int _max_objects = 1000, int _min_frames = 3, float _max_dist = 40, cv::Size _img_size = cv::Size(10000, 10000)) :
+    Track_kalman_t(int _max_objects = 1000, int _min_frames = 3, float _max_dist = 40, cv::Size _img_size = cv::Size(10000, 10000)) :
         max_objects(_max_objects), min_frames(_min_frames), max_dist(_max_dist), img_size(_img_size),
         track_id_counter(0)
     {

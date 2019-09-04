@@ -15,7 +15,6 @@ extern "C" {
 #include "option_list.h"
 #include "stb_image.h"
 }
-//#include <sys/time.h>
 
 #include <vector>
 #include <iostream>
@@ -24,7 +23,6 @@ extern "C" {
 
 #define NFRAMES 3
 
-//static Detector* detector = NULL;
 static std::unique_ptr<Detector> detector;
 
 int init(const char *configurationFilename, const char *weightsFilename, int gpu)
@@ -139,13 +137,11 @@ LIB_API Detector::Detector(std::string cfg_filename, std::string weight_filename
     detector_gpu_t &detector_gpu = *static_cast<detector_gpu_t *>(detector_gpu_ptr.get());
 
 #ifdef GPU
-    //check_cuda( cudaSetDevice(cur_gpu_id) );
     cuda_set_device(cur_gpu_id);
     printf(" Used GPU %d \n", cur_gpu_id);
 #endif
     network &net = detector_gpu.net;
     net.gpu_index = cur_gpu_id;
-    //gpu_index = i;
 
     char *cfgfile = const_cast<char *>(cfg_filename.data());
     char *weightfile = const_cast<char *>(weight_filename.data());
@@ -177,7 +173,6 @@ LIB_API Detector::Detector(std::string cfg_filename, std::string weight_filename
 LIB_API Detector::~Detector()
 {
     detector_gpu_t &detector_gpu = *static_cast<detector_gpu_t *>(detector_gpu_ptr.get());
-    //layer l = detector_gpu.net.layers[detector_gpu.net.n - 1];
 
     free(detector_gpu.track_id);
 
@@ -287,7 +282,7 @@ LIB_API std::vector<bbox_t> Detector::detect(image_t img, float thresh, bool use
 
     if (net.w == im.w && net.h == im.h) {
         sized = make_image(im.w, im.h, im.c);
-        memcpy(sized.data, im.data, im.w * im.h * im.c * sizeof(float));
+        memcpy(sized.data, im.data, (im.w * im.h * im.c) * sizeof(float));
     }
     else
         sized = resize_image(im, net.w, net.h);

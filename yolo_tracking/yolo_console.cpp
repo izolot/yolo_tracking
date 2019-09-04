@@ -16,9 +16,6 @@
 //#define TRACK_OPTFLOW
 #define GPU
 
-// To use 3D-stereo camera ZED - uncomment the following line. ZED_SDK should be installed.
-//#define ZED_STEREO
-
 
 #include "yolo_class.hpp"    // imported functions from DLL
 
@@ -63,7 +60,6 @@ void draw_boxes(cv::Mat mat_img, std::vector<bbox_t> result_vec, std::vector<std
             cv::Size const text_size = getTextSize(obj_name, cv::FONT_HERSHEY_COMPLEX_SMALL, 1.2, 2, 0);
             int max_width = (text_size.width > i.w + 2) ? text_size.width : (i.w + 2);
             max_width = std::max(max_width, (int)i.w + 2);
-            //max_width = std::max(max_width, 283);
             std::string coords_3d;
             if (!std::isnan(i.z_3d)) {
                 std::stringstream ss;
@@ -162,7 +158,7 @@ int main(int argc, char *argv[])
 
     auto obj_names = objects_names_from_file(names_file);
     std::string out_videofile = "result.avi";
-    bool const save_output_videofile = true;   // true - for history
+    bool const save_output_videofile = true;   // true - for save to videofile
     bool const send_network = false;        // true - for remote detection
     bool const use_kalman_filter = false;   // true - for stationary camera
 
@@ -189,10 +185,10 @@ int main(int argc, char *argv[])
             std::string const protocol = filename.substr(0, 7);
             if (file_ext == "avi" || file_ext == "mp4" || file_ext == "mjpg" || file_ext == "mov" ||     // video file
                 protocol == "rtmp://" || protocol == "rtsp://" || protocol == "http://" || protocol == "https:/" ||    // video network stream
-                filename == "zed_camera" || file_ext == "svo" || filename == "web_camera")   // ZED stereo camera
+                filename == "web_camera")  
 
             {
-                if (protocol == "rtsp://" || protocol == "http://" || protocol == "https:/" || filename == "zed_camera" || filename == "web_camera")
+                if (protocol == "rtsp://" || protocol == "http://" || protocol == "https:/" || filename == "web_camera")
                     detection_sync = false;
 
                 cv::Mat cur_frame;
@@ -203,7 +199,7 @@ int main(int argc, char *argv[])
                 int video_fps = 25;
                 bool use_zed_camera = false;
 
-                track_kalman_t track_kalman;
+                Track_kalman_t track_kalman;
 
 
                 cv::VideoCapture cap;
@@ -379,7 +375,8 @@ int main(int argc, char *argv[])
                         // track ID by using custom function
                         else {
                             int frame_story = std::max(5, current_fps_cap.load());
-                            result_vec = detector.tracking_id(result_vec, true, frame_story, 40);
+							result_vec = detector.tracking_id(result_vec, true, frame_story, 45);
+
                         }
 
                         //small_preview.set(draw_frame, result_vec);
